@@ -1,11 +1,11 @@
-About r-startup
-===============
+About r-startup-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-startup-feedstock/blob/main/LICENSE.txt)
 
 Home: https://henrikbengtsson.github.io/startup/, https://github.com/HenrikBengtsson/startup
 
 Package license: LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-startup-feedstock/blob/main/LICENSE.txt)
 
 Summary: Adds support for R startup configuration via '.Renviron.d' and '.Rprofile.d' directories in addition to '.Renviron' and '.Rprofile' files.  This makes it possible to keep private / secret environment variables separate from other environment variables.  It also makes it easier to share specific startup settings by simply copying a file to a directory.
 
