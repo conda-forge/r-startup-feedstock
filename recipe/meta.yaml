@@ -1,4 +1,4 @@
-{% set version = '0.19.0' %}
+{% set version = "0.20.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/startup_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/startup/startup_{{ version }}.tar.gz
-  sha256: e655ff3a282ad06160976d8b329fe96fd65bffeecd3d7489a6483ca6ccdc3803
+  sha256: 82ed2e7a9a68ae0f4d9f111eb334a2dcc60c5677ed77ca8c5b520c06699503d0
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -37,14 +37,11 @@ test:
 about:
   home: https://henrikbengtsson.github.io/startup/, https://github.com/HenrikBengtsson/startup
   license: LGPL-2.1-or-later
-  summary: Adds support for R startup configuration via '.Renviron.d' and '.Rprofile.d' directories
-    in addition to '.Renviron' and '.Rprofile' files.  This makes it possible to keep
-    private / secret environment variables separate from other environment variables.  It
-    also makes it easier to share specific startup settings by simply copying a file
-    to a directory.
+  summary: Adds support for R startup configuration via '.Renviron.d' and '.Rprofile.d' directories in addition to '.Renviron' and '.Rprofile' files.  This makes it possible to keep private / secret environment variables separate from other environment variables.  It also makes it easier to share specific startup settings
+    by simply copying a file to a directory.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 
 extra:
   recipe-maintainers:
