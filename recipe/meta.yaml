@@ -1,4 +1,4 @@
-{% set version = "0.22.0" %}
+{% set version = "0.23.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/startup_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/startup/startup_{{ version }}.tar.gz
-  sha256: 9569ecc68ed105634303d7c8acf7a6e80817e67933f9ca14fc3b4cc64a741112
+  sha256: 865f7e87bcce05e908b538be296a2c5b9901a07e5af3ca91ec89543281b0ffec
 
 build:
   number: 0
